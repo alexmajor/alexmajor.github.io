@@ -27,7 +27,7 @@ body{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: 0.3;
 }
 
 .home {
@@ -42,8 +42,6 @@ body{
   h1 {
     position: relative;
     font-size: 36pt;
-    line-height: 0.9;
-    color: #ffffff
   }
 
   .highlight{
