@@ -14,11 +14,16 @@ body{
         right: 0;
         left: 0;
         min-height: 300px;
-        z-index: 99999999;
+        z-index: -1;
         transition: opacity 0.5s ease-in-out;
 }
 
-.home::before{    
+.container{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.container::before{    
     content: "";
     background-image: url('../assets/images/etienne-girardet-chp1ITgplkA-unsplash.jpg');
     background-size: cover;
@@ -28,22 +33,44 @@ body{
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
+    z-index: -1;
 }
 
-.home {
-    position: relative; 
-    height: 100vh;
-    width: 100%;
+.home {    
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
-  h1 {
+.home h1 {
     position: relative;
     font-size: 36pt;
   }
 
-  .highlight{
+.home h1 .highlight {
       color:#a27ea5
+  }
+
+  #footer{
+      margin: 15px;
+  }
+
+  ul.social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  ul.social-media-list li {
+    display: inline-block;
+    margin: 2px;
+  }
+
+  ul.social-media-list img {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #00dfff;
+    width: 20px;
+    height: 20px;
   }
