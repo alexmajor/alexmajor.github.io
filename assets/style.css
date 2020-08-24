@@ -1,0 +1,76 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'bitstream_vera_sans_monoroman', Arial, sans-serif;
+}
+
+#container {    
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        min-height: 300px;
+        z-index: -1;
+        transition: opacity 0.5s ease-in-out;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.container::before{    
+    content: "";
+    background-image: url('../assets/images/etienne-girardet-chp1ITgplkA-unsplash.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.home {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.home h1 {
+    position: relative;
+    font-size: 36pt;
+  }
+
+.home h1 .highlight {
+      color:#a27ea5
+  }
+
+  #footer{
+      margin: 15px;
+  }
+
+  ul.social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  ul.social-media-list li {
+    display: inline-block;
+    margin: 2px;
+  }
+
+  ul.social-media-list img {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #00dfff;
+    width: 20px;
+    height: 20px;
+  }
