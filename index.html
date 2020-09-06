@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Major</title>
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" type="text/css" />
     <link rel="stylesheet" href="./assets/normalize.css" type="text/css" />
@@ -10,21 +11,128 @@
 </head>
 
 <body>
-    <div id="container" class="container">
-        <main class="home">
-            <h1> Hi, I am <span class="highlight">Alex Major</span>.<br />I am a full-stack developer.</h1>
-        </main>
-        <footer id="footer">
-            <ul class="social-media-list">
-                <li><a href="https://www.linkedin.com/in/amajor" target="_blank" aria-label="LinkedIn"><img
-                            src="https://unpkg.com/@fortawesome/fontawesome-free@latest/svgs/brands/linkedin.svg"
-                            alt="LinkedIn" title="LinkedIn"></a></li>
-                <li><a href="https://github.com/alexmajor" target="_blank" aria-label="Github"><img
-                            src="https://unpkg.com/@fortawesome/fontawesome-free@latest/svgs/brands/github.svg"
-                            alt="GitHub" title="GitHub"></a></li>
+    <header>
+        <img src="./assets/images/logo.png" alt="Alex Major logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#cta">Contact</a></li>
             </ul>
-        </footer>
+        </nav>
+    </header>
+    <section class="home-hero" id="home">
+        <div class="container">
+            <h1 class="title title-cta">
+                I am Alex Major
+                <span class="subtitle">I am a full-stack developer</span>
+            </h1>
+            <a href="#skills" class="btn btn-accent">See my skills</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="home-about" id="about">
+            <div class="home-about-textbox">
+                <h1>Who Am I</h1>
+                <p>I am a developer with a history of working in the various services industries.</p>
+                <p>I am passionate about all aspects of software development, for instance, architecture, database
+                    design, large-scale web applications, and service applications.</p>
+            </div>
+        </section>
     </div>
+
+    <section class="skills" id="skills">
+        <h1>Some of my skills</h1>
+
+        <!-- skill item #1 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/csharp.png" alt="c-sharp">
+            <figcaption class="skill-detail">
+                <p>.NET Core & Framework</p>
+            </figcaption>
+        </figure>
+        <!-- skill item #2 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/git.png" alt="GIT">
+            <figcaption class="skill-detail">
+                <p>Command Line is best</p>
+            </figcaption>
+        </figure>
+        <!-- skill item #3 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/html5.png" alt="html5">
+            <figcaption class="skill-detail">
+                <p>This site included</p>
+            </figcaption>
+        </figure>
+        <!-- skill item #4 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/sass.png" alt="sass">
+            <figcaption class="skill-detail">
+                <p>CSS3 as well</p>
+            </figcaption>
+        </figure>
+        <!-- skill item #5 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/ts.png" alt="typescipt">
+            <figcaption class="skill-detail">
+                <p>Platforms like Angular9+</p>
+            </figcaption>
+        </figure>
+        <!-- skill item #6 -->
+        <figure class="skill-item">
+            <img src="./assets/images/skills/vscode.png" alt="vscode">
+            <figcaption class="skill-detail">
+                <p>Visual Studio Code & IDE</p>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="cta" id="cta">
+        <div class="container">
+            <h1 class="title">
+                Thank you for stopping by.
+                <span class="subtitle">Feel free to reach out!</span></h1>
+            <a href="https://www.linkedin.com/in/amajor" target="_blank" class="btn btn-dark">Contact Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="col-3">
+                <p>"The Internet?  Is that thing still around?" - Homer Simpson</p>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li><strong>Socials</strong></li>
+                    <li><a href="https://www.linkedin.com/in/amajor" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/alexmajor" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li><strong>Inspiration</strong></li>
+                    <li><a href="https://twitter.com/KevinJPowell" target="_blank">Kevin J Powell</a></li>
+                    <li><a href="https://twitter.com/codeSTACKr" target="_blank">codeSTACKr</a></li>
+                    <li><a href="https://www.imdb.com/name/nm0000206/" target="_blank">Keanu Reeves</a></li>
+                </ul>
+            </div>
+
+            <div class="col-1">
+                <ul class="unstyled-list">
+                    <li><strong>Hobbies</strong></li>
+                    <li>Baking</li>
+                    <li>Doggie Dad</li>
+                    <li>Kitty Attendant</li>
+                    <li>Board Games</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
